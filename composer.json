@@ -1,5 +1,5 @@
 {
-    "name": "hyperf-database-dm/hyperf-database-dm",
+    "name": "jackfinal/hyperf-database-dm",
     "type": "library",
     "version": "dev-master",
     "license": "MIT",
