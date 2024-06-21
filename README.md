@@ -1,27 +1,3 @@
-# component-creator
-
-```
-composer require hyperf/component-creator
-```
-
-
-## 特别提醒
-
-自增id用这个identity，别用官方的autoIncrement,另外Schema迁移 只支持部分参数。
-
-```
-Schema::create('aaausers', function (Blueprint $table) {
-  $table->identity('id', 1, 1);
-  $table->primary('id');
-  $table->datetimes();
-  $table->softDeletes();
-  $table->comment('Table Comment');
-  $table->mediumText('description');  
-  $table->string('name', 100);
-  $table->text('content');
-});
-```
-
 # DM DB driver for Hyperf 3 via DM
 
 ## hyperf-database-dm
