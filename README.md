@@ -9,9 +9,9 @@ Hyperf-database-dm is an Dm Database Driver package for [Hyperf](https://www.hyp
 - You will find user-friendly and updated documentation here: [Hyperf-database-dm Docs](https://github.com/jackfinal/hyperf-database-dm)
 - All about dm and php:[The Underground PHP and Dm Manual](https://eco.dameng.com/document/dm/zh-cn/app-dev/php-php.html)
 
-## Laravel Version Compatibility
+## Hyperf Version Compatibility
 
- Laravel  | Package
+ Hyperf   | Package
 :---------|:----------
  3.1.x    | 3.1.x
 

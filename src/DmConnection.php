@@ -420,26 +420,6 @@ class DmConnection extends Connection
     }
 
     /**
-     * Set oracle NLS session to case insensitive search & sort.
-     *
-     * @return $this
-     */
-    public function useCaseInsensitiveSession()
-    {
-        // return $this->setSessionVars(['NLS_COMP' => 'LINGUISTIC', 'NLS_SORT' => 'BINARY_CI']);
-    }
-
-    /**
-     * Set oracle NLS session to case sensitive search & sort.
-     *
-     * @return $this
-     */
-    public function useCaseSensitiveSession()
-    {
-        // return $this->setSessionVars(['NLS_COMP' => 'BINARY', 'NLS_SORT' => 'BINARY']);
-    }
-
-    /**
      * Bind values to their parameters in the given statement.
      *
      * @param  \Yajra\Pdo\Oci8\Statement  $statement

@@ -12,7 +12,6 @@ declare(strict_types=1);
 
 namespace Hyperf\Database\Dm\Schema;
 
-use Hyperf\Database\Exception\InvalidArgumentException;
 use Hyperf\Database\Schema\Builder;
 use Hyperf\Database\Connection;
 use Closure;
@@ -39,7 +38,7 @@ class DmBuilder extends Builder
      *
      * @param  string  $table
      * @param  Closure  $callback
-     * @return \Illuminate\Database\Schema\Blueprint
+     * @return \Hyperf\Database\Schema\Blueprint
      */
     public function create($table, Closure $callback): void
     {
@@ -60,7 +59,7 @@ class DmBuilder extends Builder
      *
      * @param  string  $table
      * @param  Closure  $callback
-     * @return \Illuminate\Database\Schema\Blueprint
+     * @return \Hyperf\Database\Schema\Blueprint
      */
     protected function createBlueprint($table, Closure $callback = null)
     {
@@ -75,7 +74,7 @@ class DmBuilder extends Builder
      *
      * @param  string  $table
      * @param  Closure  $callback
-     * @return \Illuminate\Database\Schema\Blueprint
+     * @return \Hyperf\Database\Schema\Blueprint
      */
     public function table($table, Closure $callback): void
     {
@@ -92,7 +91,7 @@ class DmBuilder extends Builder
      * Drop a table from the schema.
      *
      * @param  string  $table
-     * @return \Illuminate\Database\Schema\Blueprint
+     * @return \Hyperf\Database\Schema\Blueprint
      */
     public function drop($table): void
     {
@@ -116,7 +115,7 @@ class DmBuilder extends Builder
      * Indicate that the table should be dropped if it exists.
      *
      * @param  string  $table
-     * @return \Illuminate\Support\Fluent
+     * @return \Hyperf\Support\Fluent
      */
     public function dropIfExists($table): void
     {
